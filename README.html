@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        .login-btn {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+
+            // Ganti "PandaManis" dengan kata sandi yang benar
+            if (password === "PandaManis") {
+                alert("Selamat Ulang Tahun ke-20 pandaku yang cantikk");
+                // Menambahkan pesan ketika tombol OK di popup diklik
+                setTimeout(function() {
+                    alert("Semoga panda sayang ayak selaluu, diberikan kemudahan dunia akhirat serta mimpinya tercapaii aamiin yaa rabbal aalamiin");
+                }, 100); // Memberikan jeda sebelum menampilkan pesan kedua
+            } else {
+                alert("Password salah!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="button" value="Login" onclick="checkPassword()" class="login-btn">
+    </form>
+</body>
+</html>
